@@ -297,7 +297,7 @@ A queueing system
 \begin{solution}
  All jobs that arrive such that the queue becomes larger than $K$ must be dropped.
 
- First $d_k = \min\{L_{k-1}, c_k\}$. Then, $L_k' = L_{k-1}+a_k-d_k$ is the queue without blocking. Then $L_k=\min\{L_k', K\}$ is the queue with blocking. Finally, the loss $l_k=L_k'-L_k$, i.e., the excess arrivals. The fraction lost is $l_k/a_k$.
+ First $d_k = \min\{L_{k-1}, c_k\}$. Then, $L_k' = L_{k-1}+a_k-d_k$ is the queue without blocking. Then $L_k=\min\{L_k', K\}$ is the queue with blocking. Finally, the loss is $l_k=L_k'-L_k$, i.e., the excess arrivals. The fraction lost is $l_k/a_k$.
 
 \begin{pyconsole}
 a = [0, 10, 3, 6]
